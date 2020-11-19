@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="buscar_Producto" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_buscarProducto">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
+      <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="73.0" text="BUSCAR PRODUCTO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="id" layoutX="122.0" layoutY="23.0" text="NUMERO EMPLEADO" textFill="WHITE" />
+      <Circle fill="WHITE" layoutX="40.0" layoutY="34.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/ujser_default.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="625.0" layoutY="18.0" onMouseClicked="#atrasPanelPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/atras.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
+         <columns>
+            <TableColumn prefWidth="140.0" text="CODIGO" />
+            <TableColumn prefWidth="231.0" text="NOMBRE" />
+            <TableColumn prefWidth="150.0" text="PRECIO VENTA" />
+            <TableColumn prefWidth="150.0" text="CANTIDAD ACTUAL" />
+         </columns>
+      </TableView>
+      <Button layoutX="576.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="BUSCAR" />
+      <TextField layoutX="373.0" layoutY="86.0" prefHeight="31.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>

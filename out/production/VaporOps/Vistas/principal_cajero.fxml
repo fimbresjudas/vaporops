@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePrincipalCajero" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_principalCajero">
+   <children>
+      <Button layoutX="144.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/sell.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="390.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/buscar_producto.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
+      <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE CAJERO" textFill="WHITE" />
+      <Label layoutX="200.0" layoutY="310.0" text="VENTA">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="309.0" prefHeight="31.0" prefWidth="183.0" text="BUSCAR PRODUCTO">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id" layoutX="122.0" layoutY="23.0" text="NUMERO CAJERO" textFill="WHITE" />
+      <Button layoutX="515.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#cerrarSesion" style="-fx-background-color: RED;" text="CERRAR SESION" textAlignment="CENTER" textFill="WHITE" />
+      <Circle fill="WHITE" layoutX="40.0" layoutY="34.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/ujser_default.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
