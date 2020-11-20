@@ -41,5 +41,6 @@
          </columns>
       </TableView>
       <Button layoutX="532.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#altaNuevoUsuario" style="-fx-background-color: WHITE;" text="NUEVO USUARIO" />
+      <Button layoutX="336.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#detallesUsuario" style="-fx-background-color: WHITE;" text="DETALLES DE USUARIO" />
    </children>
 </AnchorPane>

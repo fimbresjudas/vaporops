@@ -8,6 +8,7 @@ public class Ventanas {
 
    public static Ventanas v = new Ventanas();
     private static Usuario user;
+    public static Usuario usuarioDetalles;
 
     public void initialize(Label id, Label nombre) {
         id.setText(String.valueOf(user.getId()));
@@ -17,7 +18,6 @@ public class Ventanas {
     public static void crearUsuario(String usuario) {
         Usuario.user = new Usuario(usuario);
         user = Usuario.user;
-        System.out.println(user.getTipo_usuario());
     }
 
     public void cargarPanelPrincipal(AnchorPane login){
@@ -130,6 +130,37 @@ public class Ventanas {
         try {
             AnchorPane ingresarContraseña = FXMLLoader.load(getClass().getResource("../Vistas/contraseña_usuario.fxml"));
             pane.getChildren().setAll(ingresarContraseña);
+
+        }
+        catch (Exception e){
+        }
+    }
+
+    public void cargarDetallesUsuario(AnchorPane pane) {
+        try {
+            AnchorPane detallesUsuario = FXMLLoader.load(getClass().getResource("../Vistas/detalles_usuario.fxml"));
+            pane.getChildren().setAll(detallesUsuario);
+
+        }
+        catch (Exception e){
+        }
+    }
+
+    public void editarUsuario(AnchorPane pane) {
+        try {
+            AnchorPane editarUsuario = FXMLLoader.load(getClass().getResource("../Vistas/editar_usuario.fxml"));
+            pane.getChildren().setAll(editarUsuario);
+
+        }
+        catch (Exception e){
+        }
+
+    }
+
+    public void editarContraseña(AnchorPane pane) {
+        try {
+            AnchorPane editarContraseña = FXMLLoader.load(getClass().getResource("../Vistas/editar_contraseña.fxml"));
+            pane.getChildren().setAll(editarContraseña);
 
         }
         catch (Exception e){
