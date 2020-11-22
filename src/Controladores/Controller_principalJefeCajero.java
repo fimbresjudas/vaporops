@@ -19,4 +19,16 @@ public class Controller_principalJefeCajero {
     public void cerrarSesion(){
         Ventanas.v.cerrarSesion(paneJefeCajero);
     }
+
+    public void registro_Ventas(){
+        Ventanas.v.registro_Ventas(paneJefeCajero);
+    }
+
+    public void ventas(){
+        Ventanas.v.ventas(paneJefeCajero);
+    }
+
+    public void buscar_Producto(){
+        Ventanas.v.buscar_Producto(paneJefeCajero);
+    }
 }

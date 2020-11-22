@@ -16,4 +16,16 @@ public class Controller_almacen {
     public void atrasPanelPrincipal (){
         Ventanas.v.cargarPanelPrincipal(almacen);
     }
+
+    public void nuevoProducto(){
+        Ventanas.v.nuevoProducto(almacen);
+    }
+
+    public void nuevoDistribuidor(){
+        Ventanas.v.nuevoDistribuidor(almacen);
+    }
+
+    public void nuevoIngreso(){
+        Ventanas.v.nuevoIngresoProducto(almacen);
+    }
 }

@@ -32,7 +32,7 @@ public class Controller_nuevoUsuario {
     public void ingresarContraseña() {
         if (validacionVacios()) {
             if (!existenciaUsuario()) {
-                Usuario.usuarioNuevo = new Usuario(Long.parseLong(codigoTf.getText()), nombreTf.getText(), usuarioTf.getText(), direccionTa.getText(),  telefonoTf.getText(), (String) tipo_usuarioC.getValue());
+                Usuario.usuarioNuevo = new Usuario(Long.parseLong(codigoTf.getText()), nombreTf.getText().toUpperCase(), usuarioTf.getText(), direccionTa.getText().toUpperCase(),  telefonoTf.getText(), ((String) tipo_usuarioC.getValue()).toUpperCase());
                 Ventanas.v.ingresarContraseña(nuevoUsuario);
             }
             else {

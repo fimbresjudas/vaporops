@@ -38,8 +38,4 @@ public class Controller_principalAdmin {
     public void buscar_Producto(){
         Ventanas.v.buscar_Producto(paneAdmin);
     }
-
-    public void devolucion() {
-        Ventanas.v.devolucion(paneAdmin);
-    }
 }

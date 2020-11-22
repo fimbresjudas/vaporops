@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.sql.*;
+import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
 import javax.swing.text.html.ImageView;
@@ -19,7 +20,7 @@ public class Main extends Application {
         primaryStage.setTitle("Vapor Ops: Punto de Venta");
         primaryStage.setScene(new Scene(root, 700, 500));
         primaryStage.setResizable(false);
-
+        System.out.println(new Date());
         primaryStage.show();
     }
 

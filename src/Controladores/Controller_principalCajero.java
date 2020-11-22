@@ -17,4 +17,13 @@ public class Controller_principalCajero {
     public void cerrarSesion(){
         Ventanas.v.cerrarSesion(panePrincipalCajero);
     }
+
+    public void ventas(){
+        Ventanas.v.ventas(panePrincipalCajero);
+    }
+
+    public void buscar_Producto(){
+        Ventanas.v.buscar_Producto(panePrincipalCajero);
+    }
+
 }

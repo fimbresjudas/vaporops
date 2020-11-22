@@ -20,7 +20,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="265.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: white;">
+      <Button layoutX="265.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#buscar_Producto" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -36,7 +36,7 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Label layoutX="259.0" layoutY="310.0" prefHeight="31.0" prefWidth="183.0" text="BUSCAR PRODUCTO">
+      <Label layoutX="265.0" layoutY="310.0" prefHeight="31.0" prefWidth="181.0" text="BUSCAR PRODUCTO">
          <font>
             <Font size="19.0" />
          </font>
@@ -49,16 +49,16 @@
             <Image url="@../Assets/ujser_default.png" />
          </image>
       </ImageView>
-      <Button layoutX="484.0" layoutY="145.0" mnemonicParsing="false" style="-fx-background-color: white;">
+      <Button layoutX="484.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#registro_Ventas" prefHeight="106.0" prefWidth="70.0" style="-fx-background-color: white;">
          <graphic>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="176.0" fitWidth="152.0" onMouseClicked="#registroVentas" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Assets/devolucion.png" />
+                  <Image url="@../Assets/registro.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="515.0" layoutY="310.0" prefHeight="31.0" prefWidth="128.0" text="DEVOLUCIÓN">
+      <Label layoutX="494.0" layoutY="310.0" prefHeight="31.0" prefWidth="170.0" text="REGISTRO VENTAS">
          <font>
             <Font size="19.0" />
          </font>

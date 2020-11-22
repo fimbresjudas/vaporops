@@ -21,7 +21,7 @@
             <Image url="@../Assets/ujser_default.png" />
          </image>
       </ImageView>
-      <Button layoutX="27.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#ventas" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: white;">
+      <Button layoutX="100.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#ventas" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="98.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,12 +30,12 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="62.0" layoutY="273.0" text="VENTA">
+      <Label layoutX="134.0" layoutY="273.0" text="VENTA">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="200.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#buscar_Producto" style="-fx-background-color: white;">
+      <Button layoutX="289.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#buscar_Producto" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="98.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -44,26 +44,12 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="183.0" layoutY="270.0" prefHeight="31.0" prefWidth="152.0" text="BUSCAR PRODUCTO">
+      <Label layoutX="274.0" layoutY="270.0" prefHeight="31.0" prefWidth="152.0" text="BUSCAR PRODUCTO">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="375.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#devolucion" style="-fx-background-color: white;">
-         <graphic>
-            <ImageView fitHeight="98.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/devolucion.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Label layoutX="383.0" layoutY="270.0" prefHeight="31.0" prefWidth="102.0" text="DEVOLUCIÓN">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Button layoutX="553.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#almacen" style="-fx-background-color: white;">
+      <Button layoutX="474.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#almacen" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="98.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -72,7 +58,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="572.0" layoutY="270.0" prefHeight="31.0" prefWidth="80.0" text="ALMACEN">
+      <Label layoutX="493.0" layoutY="270.0" prefHeight="31.0" prefWidth="80.0" text="ALMACEN">
          <font>
             <Font size="16.0" />
          </font>

@@ -9,6 +9,9 @@ public class Ventanas {
    public static Ventanas v = new Ventanas();
     private static Usuario user;
     public static Usuario usuarioDetalles;
+    public static Producto nuevoproducto;
+    public static Producto productoIngreso;
+
 
     public void initialize(Label id, Label nombre) {
         id.setText(String.valueOf(user.getId()));
@@ -61,6 +64,7 @@ public class Ventanas {
             pane.getChildren().setAll(almacen);
         }
         catch (Exception e){
+            System.out.println(e);
 
         }
     }
@@ -100,16 +104,6 @@ public class Ventanas {
         try {
             AnchorPane buscar_Producto = FXMLLoader.load(getClass().getResource("../Vistas/buscar_producto.fxml"));
             pane.getChildren().setAll(buscar_Producto);
-        }
-        catch (Exception e){
-
-        }
-    }
-
-    public void devolucion(AnchorPane pane) {
-        try {
-            AnchorPane devolucion = FXMLLoader.load(getClass().getResource("../Vistas/devolucion.fxml"));
-            pane.getChildren().setAll(devolucion);
         }
         catch (Exception e){
 
@@ -161,6 +155,36 @@ public class Ventanas {
         try {
             AnchorPane editarContraseña = FXMLLoader.load(getClass().getResource("../Vistas/editar_contraseña.fxml"));
             pane.getChildren().setAll(editarContraseña);
+
+        }
+        catch (Exception e){
+        }
+    }
+
+    public void nuevoProducto(AnchorPane pane) {
+        try {
+            AnchorPane nuevoProducto = FXMLLoader.load(getClass().getResource("../Vistas/nuevo_producto.fxml"));
+            pane.getChildren().setAll(nuevoProducto);
+
+        }
+        catch (Exception e){
+        }
+    }
+
+    public void nuevoDistribuidor(AnchorPane pane) {
+        try {
+            AnchorPane nuevoDistribuidor = FXMLLoader.load(getClass().getResource("../Vistas/nuevo_distribuidor.fxml"));
+            pane.getChildren().setAll(nuevoDistribuidor);
+
+        }
+        catch (Exception e){
+        }
+    }
+
+    public void nuevoIngresoProducto(AnchorPane pane) {
+        try {
+            AnchorPane nuevoIngreso = FXMLLoader.load(getClass().getResource("../Vistas/ingreso_stock.fxml"));
+            pane.getChildren().setAll(nuevoIngreso);
 
         }
         catch (Exception e){

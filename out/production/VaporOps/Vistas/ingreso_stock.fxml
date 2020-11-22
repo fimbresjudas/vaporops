@@ -10,37 +10,37 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas.Principal">
+<AnchorPane fx:id="ingreso" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_nuevoIngreso">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
-      <Label layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
+      <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
       <Label layoutX="26.0" layoutY="73.0" text="REGISTRO DE INGRESO">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="23.0" text="NUMERO EMPLEADO" textFill="WHITE" />
+      <Label fx:id="id" layoutX="122.0" layoutY="23.0" text="NUMERO EMPLEADO" textFill="WHITE" />
       <Circle fill="WHITE" layoutX="40.0" layoutY="34.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/ujser_default.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="625.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="625.0" layoutY="18.0" onMouseClicked="#atrasAlmacen" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Assets/atras.png" />
          </image>
       </ImageView>
       <Label layoutX="211.0" layoutY="98.0" text="CODIGO PRODUCTO:" />
-      <Label layoutX="59.0" layoutY="168.0" text="NOMBRE:" />
-      <Button layoutX="209.0" layoutY="429.0" mnemonicParsing="false" style="-fx-background-color: red;" text="CANCELAR" textFill="WHITE" />
-      <Button layoutX="576.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: white;" text="BUSCAR" />
-      <TextField layoutX="364.0" layoutY="93.0" />
+      <Label fx:id="nombreP" layoutX="59.0" layoutY="168.0" text="NOMBRE:" />
+      <Button layoutX="209.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#atrasAlmacen" style="-fx-background-color: red;" text="CANCELAR" textFill="WHITE" />
+      <Button layoutX="576.0" layoutY="93.0" mnemonicParsing="false" onMouseClicked="#buscar" style="-fx-background-color: white;" text="BUSCAR" />
+      <TextField fx:id="codigoP" layoutX="364.0" layoutY="93.0" />
       <Label layoutX="28.0" layoutY="240.0" text="PRECIO DE INGRESO (UNIT)" />
-      <TextField layoutX="242.0" layoutY="235.0" prefHeight="31.0" prefWidth="82.0" />
+      <TextField fx:id="precioIngreso" layoutX="242.0" layoutY="235.0" prefHeight="31.0" prefWidth="82.0" />
       <Label layoutX="354.0" layoutY="240.0" text="CANTIDAD INGRESO" />
-      <TextField layoutX="510.0" layoutY="235.0" prefHeight="31.0" prefWidth="82.0" />
-      <Button layoutX="411.0" layoutY="429.0" mnemonicParsing="false" style="-fx-background-color: white;" text="ACEPTAR" />
-      <Label layoutX="348.0" layoutY="168.0" text="DISTRIBUIDOR::" />
+      <TextField fx:id="cantidadIngreso" layoutX="510.0" layoutY="235.0" prefHeight="31.0" prefWidth="82.0" />
+      <Button layoutX="411.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#aceptarIngreso" style="-fx-background-color: white;" text="ACEPTAR" />
+      <Label fx:id="distribuidorP" layoutX="348.0" layoutY="168.0" text="DISTRIBUIDOR::" />
    </children>
 </AnchorPane>

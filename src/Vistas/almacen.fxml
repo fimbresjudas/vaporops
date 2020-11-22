@@ -42,7 +42,8 @@
             <TableColumn prefWidth="119.0" text="CANTIDAD ACTUAL" />
          </columns>
       </TableView>
-      <Button layoutX="332.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="NUEVO PRODUCTO" />
-      <Button layoutX="494.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REGISTRO DE INGRESOS" />
+      <Button layoutX="360.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#nuevoProducto" style="-fx-background-color: WHITE;" text="NUEVO PRODUCTO" />
+      <Button layoutX="524.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#nuevoIngreso" style="-fx-background-color: WHITE;" text="REGISTRAR INGRESO" />
+      <Button layoutX="180.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#nuevoDistribuidor" style="-fx-background-color: WHITE;" text="NUEVO DISTRIBUIDOR" />
    </children>
 </AnchorPane>
