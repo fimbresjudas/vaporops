@@ -10,18 +10,20 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller_nuevoProducto {
-    @FXML AnchorPane nuevoProducto;
-    @FXML Label id, nombre;
-    @FXML TextField codigoP, nombreP, precioventaP;
-    @FXML TextArea detallesP;
-    @FXML ComboBox distribuidorC = new ComboBox();
-    ObservableList<String> distribuidores;
+    @FXML private AnchorPane nuevoProducto;
+    @FXML private Label id, nombre;
+    @FXML private TextField codigoP, nombreP, precioventaP;
+    @FXML private TextArea detallesP;
+    @FXML private ComboBox distribuidorC = new ComboBox();
+    private ObservableList<String> distribuidores;
 
 
     public void initialize(){
         distribuidores = DBManager.distribuidores();
         Ventanas.v.initialize(id,nombre);
         distribuidorC.setItems(distribuidores);
+        Ventanas.v.numericOnly(codigoP);
+        Ventanas.v.numericOnly(precioventaP);
     }
 
     public void atrasAlmacen(){

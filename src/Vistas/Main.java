@@ -20,13 +20,13 @@ public class Main extends Application {
         primaryStage.setTitle("Vapor Ops: Punto de Venta");
         primaryStage.setScene(new Scene(root, 700, 500));
         primaryStage.setResizable(false);
-        System.out.println(new Date());
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
         DBManager.initConecction();
+        DBManager.connectionBitacora();
         launch(args);
     }
 

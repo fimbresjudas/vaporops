@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Vistas.DetallesVentas"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="detalles_venta" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_detalles_venta">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="99.0" layoutX="478.0" layoutY="346.0" stroke="TRANSPARENT" strokeType="INSIDE" width="207.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
+        <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
+        <Label fx:id="numeroVenta" layoutX="26.0" layoutY="73.0" text="VENTA NO. ">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="id" layoutX="122.0" layoutY="23.0" text="NUMERO EMPLEADO" textFill="WHITE" />
+        <Circle fill="WHITE" layoutX="40.0" layoutY="34.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Assets/ujser_default.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="625.0" layoutY="18.0" onMouseClicked="#atrasVentas" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Assets/atras.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="efectivoLbl" layoutX="487.0" layoutY="417.0" prefHeight="28.0" prefWidth="176.0" style="-fx-background-color: WHITE;" text="EFECTIVO:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TableView fx:id="ventasT" layoutX="4.0" layoutY="110.0" prefHeight="342.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="cantidadCol" prefWidth="101.0" text="CANTIDAD" />
+                <TableColumn fx:id="nombreCol" prefWidth="107.0" text="NOMBRE" />
+                <TableColumn fx:id="precioUnitarioCol" prefWidth="148.0" text="PRECIO UNITARIO" />
+                <TableColumn fx:id="totalCol" prefWidth="118.0" text="TOTAL" />
+            </columns>
+        </TableView>
+        <Label fx:id="totalLbl" layoutX="484.0" layoutY="346.0" prefHeight="28.0" prefWidth="194.0" text="TOTAL:">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="cambioLbl" layoutX="485.0" layoutY="385.0" prefHeight="21.0" prefWidth="194.0" text="CAMBIO:" />
+    </children>
 </AnchorPane>

@@ -12,16 +12,18 @@ import javafx.scene.layout.AnchorPane;
 
 public class Controller_nuevoUsuario {
     ObservableList<String> tipos_usuario = FXCollections.observableArrayList("ADMINISTRADOR", "JEFE DE CAJEROS", "CAJERO");
-    @FXML Label id, nombre;
-    @FXML AnchorPane nuevoUsuario;
-    @FXML TextField codigoTf, nombreTf, usuarioTf, telefonoTf;
-    @FXML TextArea  direccionTa;
-    @FXML ComboBox tipo_usuarioC = new ComboBox();
+    @FXML private Label id, nombre;
+    @FXML private AnchorPane nuevoUsuario;
+    @FXML private TextField codigoTf, nombreTf, usuarioTf, telefonoTf;
+    @FXML private TextArea  direccionTa;
+    @FXML private ComboBox tipo_usuarioC = new ComboBox();
 
     public void initialize(){
         tipo_usuarioC.setItems(tipos_usuario);
         tipo_usuarioC.setVisibleRowCount(3);
         Ventanas.v.initialize(id,nombre);
+        Ventanas.v.numericOnly(codigoTf);
+        Ventanas.v.numericOnly(telefonoTf);
     }
 
 

@@ -9,9 +9,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller_contraseña {
-    @FXML Label id, nombre;
-    @FXML AnchorPane contraseñaUsuario;
-    @FXML PasswordField contraseña, contraseñaDos;
+    @FXML private Label id, nombre;
+    @FXML private AnchorPane contraseñaUsuario;
+    @FXML private PasswordField contraseña, contraseñaDos;
 
     public void initialize() {
         Ventanas.v.initialize(id, nombre);

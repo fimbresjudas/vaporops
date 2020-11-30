@@ -32,7 +32,7 @@ public class Controller_principalAdmin {
     }
 
     public void registro_Ventas(){
-        Ventanas.v.registro_Ventas(paneAdmin);
+        Ventanas.v.registros(paneAdmin);
     }
 
     public void buscar_Producto(){

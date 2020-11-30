@@ -11,19 +11,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class Login_controller {
-    @FXML
-    TextField usuario;
-    @FXML
-    PasswordField password;
-    @FXML
-    Button iniciar;
-    @FXML
-    AnchorPane login;
+    @FXML private TextField usuario;
+    @FXML private PasswordField password;
+    @FXML private Button iniciar;
+    @FXML private AnchorPane login;
 
 
     public void validacion() {
-        Boolean validacion = DBManager.validacionLogin(usuario.getText(), password.getText());
-        if (validacion) {
+        if (DBManager.validacionLogin(usuario.getText(), password.getText())) {
             Ventanas.crearUsuario(usuario.getText());
             Ventanas.v.cargarPanelPrincipal(login);
         } else {

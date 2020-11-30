@@ -15,10 +15,10 @@
 
 <AnchorPane fx:id="ventas" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_venta">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="94.0" layoutX="472.0" layoutY="383.0" stroke="TRANSPARENT" strokeType="INSIDE" width="207.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="72.0" layoutX="472.0" layoutY="405.0" stroke="TRANSPARENT" strokeType="INSIDE" width="207.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
       <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
-      <Label layoutX="26.0" layoutY="73.0" text="VENTA">
+      <Label fx:id="numeroVenta" layoutX="26.0" layoutY="73.0" text="VENTA NO. ">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -35,31 +35,35 @@
             <Image url="@../Assets/atras.png" />
          </image>
       </ImageView>
-      <Label layoutX="304.0" layoutY="449.0" prefHeight="28.0" prefWidth="176.0" style="-fx-background-color: WHITE;" text="SUBTOTAL:">
+      <Label fx:id="subtotalLbl" layoutX="304.0" layoutY="449.0" prefHeight="28.0" prefWidth="176.0" style="-fx-background-color: WHITE;" text="SUBTOTAL:">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TableView layoutX="4.0" layoutY="110.0" prefHeight="342.0" prefWidth="475.0">
+      <TableView fx:id="ventasT" layoutX="4.0" layoutY="110.0" prefHeight="342.0" prefWidth="475.0">
         <columns>
-          <TableColumn prefWidth="101.0" text="CANTIDAD" />
-          <TableColumn prefWidth="107.0" text="NOMBRE" />
-            <TableColumn prefWidth="148.0" text="PRECIO UNItARIO" />
-            <TableColumn prefWidth="118.0" text="PRECIO" />
+          <TableColumn fx:id="cantidadCol" prefWidth="101.0" text="CANTIDAD" />
+          <TableColumn fx:id="nombreCol" prefWidth="107.0" text="NOMBRE" />
+            <TableColumn fx:id="precioUnitarioCol" prefWidth="148.0" text="PRECIO UNITARIO" />
+            <TableColumn fx:id="totalCol" prefWidth="118.0" text="TOTAL" />
         </columns>
       </TableView>
-      <Label layoutX="484.0" layoutY="390.0" prefHeight="21.0" prefWidth="194.0" text="TOTAL:">
+      <Label fx:id="totalLbl" layoutX="484.0" layoutY="416.0" prefHeight="21.0" prefWidth="194.0" text="TOTAL:">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Label layoutX="484.0" layoutY="430.0" prefHeight="21.0" prefWidth="194.0" text="CAMBIO:" />
-      <Label layoutX="493.0" layoutY="110.0" text="CODIGO PRODUCTO" />
-      <TextField layoutX="493.0" layoutY="131.0" />
-      <Button layoutX="589.0" layoutY="174.0" mnemonicParsing="false" text="AGREGAR" />
-      <Button layoutX="589.0" layoutY="337.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="86.0" text="PAGAR" />
-      <Button layoutX="507.0" layoutY="250.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" text="BUSCAR PRODUCTO" />
-      <Separator layoutX="476.0" layoutY="226.0" prefHeight="5.0" prefWidth="238.0" style="-fx-background-color: #000000;" />
-      <Separator layoutX="475.0" layoutY="310.0" prefHeight="5.0" prefWidth="238.0" style="-fx-background-color: BLACK;" />
+      <Label fx:id="cambioLbl" layoutX="484.0" layoutY="453.0" prefHeight="21.0" prefWidth="194.0" text="CAMBIO:" />
+      <Label layoutX="496.0" layoutY="100.0" text="CODIGO PRODUCTO" />
+      <TextField fx:id="codigoTF" layoutX="496.0" layoutY="128.0" />
+      <Button layoutX="589.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#agregar" text="AGREGAR" />
+      <Button layoutX="632.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#pagar" prefHeight="31.0" prefWidth="86.0" text="PAGAR" />
+      <Button layoutX="507.0" layoutY="275.0" mnemonicParsing="false" onMouseClicked="#buscarProducto" prefHeight="31.0" prefWidth="176.0" text="BUSCAR PRODUCTO" />
+      <Separator layoutX="476.0" layoutY="257.0" prefHeight="5.0" prefWidth="238.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="476.0" layoutY="325.0" prefHeight="5.0" prefWidth="238.0" style="-fx-background-color: BLACK;" />
+      <TextField fx:id="cantidadTF" layoutX="602.0" layoutY="166.0" prefHeight="31.0" prefWidth="66.0" />
+      <Label layoutX="496.0" layoutY="171.0" text="CANTIDAD: " />
+      <TextField fx:id="pagoTF" layoutX="489.0" layoutY="357.0" prefHeight="31.0" prefWidth="139.0" />
+      <Label layoutX="489.0" layoutY="331.0" text="PAGO CON:" />
    </children>
 </AnchorPane>

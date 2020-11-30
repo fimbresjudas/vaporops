@@ -51,14 +51,14 @@
       </ImageView>
       <Button layoutX="484.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#registro_Ventas" prefHeight="106.0" prefWidth="70.0" style="-fx-background-color: white;">
          <graphic>
-            <ImageView fitHeight="176.0" fitWidth="152.0" onMouseClicked="#registroVentas" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="176.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/registro.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="494.0" layoutY="310.0" prefHeight="31.0" prefWidth="170.0" text="REGISTRO VENTAS">
+      <Label layoutX="533.0" layoutY="310.0" prefHeight="31.0" prefWidth="92.0" text="REGISTRO">
          <font>
             <Font size="19.0" />
          </font>

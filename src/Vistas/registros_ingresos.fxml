@@ -10,11 +10,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="registroVentas" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_registroVentas">
+<AnchorPane fx:id="registroIngreso" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #76f59e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Controller_registroIngreso">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46cf71" height="79.0" layoutX="-1.0" layoutY="-6.0" stroke="#00000035" strokeType="INSIDE" width="485.0" />
       <Label fx:id="nombre" layoutX="282.0" layoutY="24.0" text="NOMBRE " textFill="WHITE" />
-      <Label layoutX="26.0" layoutY="73.0" text="REGISTRO VENTAS">
+      <Label layoutX="26.0" layoutY="73.0" text="REGISTRO INGRESO">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -31,14 +31,13 @@
             <Image url="@../Assets/atras.png" />
          </image>
       </ImageView>
-      <TableView fx:id="ventasTable" layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
+      <TableView fx:id="registroIngresosT" layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
          <columns>
             <TableColumn fx:id="codigoCol" prefWidth="81.0" text="CODIGO" />
-            <TableColumn fx:id="fechaCol" prefWidth="119.0" text="FECHA" />
-            <TableColumn fx:id="totalCol" prefWidth="111.0" text="TOTAL" />
-            <TableColumn fx:id="efectivoCol" prefWidth="125.0" text="EFECTIVO" />
-            <TableColumn fx:id="cambioCol" prefWidth="98.0" text="CAMBIO" />
-            <TableColumn fx:id="usuarioCol" prefWidth="134.0" text="USUARIO" />
+            <TableColumn fx:id="productoCol" prefWidth="162.0" text="PRODUCTO" />
+            <TableColumn fx:id="precioCol" prefWidth="138.0" text="PRECIO UNIDAD" />
+            <TableColumn fx:id="cantidadCol" prefWidth="120.0" text="CANTIDAD" />
+            <TableColumn fx:id="fechaCol" prefWidth="170.0" text="FECHA" />
          </columns>
       </TableView>
    </children>

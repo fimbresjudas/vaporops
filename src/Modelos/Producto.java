@@ -5,7 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 public class Producto {
     private long codigo;
     private String nombre, detalles, distribuidor;
-    private  int precioVenta, stock_total, stock_actual;
+    private  int precioVenta, stock_total, stock_actual, precioTotal, cantidadVenta;
     private SimpleStringProperty idSimple = new SimpleStringProperty();
     private SimpleStringProperty nombreSimple = new SimpleStringProperty();
     private SimpleStringProperty distribuidorSimple = new SimpleStringProperty();

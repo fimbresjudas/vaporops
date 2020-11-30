@@ -32,14 +32,13 @@
             <Image url="@../Assets/atras.png" />
          </image>
       </ImageView>
-      <TableView layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
+      <TableView fx:id="almacenT" layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
          <columns>
-            <TableColumn prefWidth="81.0" text="CODIGO" />
-            <TableColumn prefWidth="118.0" text="NOMBRE" />
-            <TableColumn prefWidth="116.0" text="PRECIO INGRESO" />
-            <TableColumn prefWidth="118.0" text="PRECIO VENTA" />
-            <TableColumn prefWidth="116.0" text="CANTIDAD TOTAL" />
-            <TableColumn prefWidth="119.0" text="CANTIDAD ACTUAL" />
+            <TableColumn fx:id="codigoC" prefWidth="81.0" text="CODIGO" />
+            <TableColumn fx:id="nombreC" prefWidth="168.0" text="NOMBRE" />
+            <TableColumn fx:id="precioC" prefWidth="118.0" text="PRECIO VENTA" />
+            <TableColumn fx:id="cantidadTotalC" prefWidth="143.0" text="CANTIDAD TOTAL" />
+            <TableColumn fx:id="cantidadActualC" prefWidth="161.0" text="CANTIDAD ACTUAL" />
          </columns>
       </TableView>
       <Button layoutX="360.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#nuevoProducto" style="-fx-background-color: WHITE;" text="NUEVO PRODUCTO" />

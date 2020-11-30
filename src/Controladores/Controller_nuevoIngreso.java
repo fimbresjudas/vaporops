@@ -9,13 +9,16 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller_nuevoIngreso {
-    @FXML AnchorPane ingreso;
-    @FXML Label id, nombre, nombreP, distribuidorP;
-    @FXML TextField codigoP, precioIngreso, cantidadIngreso;
+    @FXML private AnchorPane ingreso;
+    @FXML private Label id, nombre, nombreP, distribuidorP;
+    @FXML private TextField codigoP, precioIngreso, cantidadIngreso;
     private Boolean bandera = false;
 
     public void initialize(){
         Ventanas.v.initialize(id,nombre);
+        Ventanas.v.numericOnly(codigoP);
+        Ventanas.v.numericOnly(precioIngreso);
+        Ventanas.v.numericOnly(cantidadIngreso);
     }
 
     public void atrasAlmacen(){

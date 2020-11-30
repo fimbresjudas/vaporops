@@ -7,8 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller_principalCajero {
-    @FXML Label id, nombre;
-    @FXML AnchorPane panePrincipalCajero;
+    @FXML private Label id, nombre;
+    @FXML private AnchorPane panePrincipalCajero;
 
     public void initialize(){
         Ventanas.v.initialize(id,nombre);;

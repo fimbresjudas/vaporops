@@ -9,12 +9,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller_nuevoDistribuidor {
-    @FXML AnchorPane nuevoDistribuidor;
-    @FXML Label id, nombre;
-    @FXML TextField codigoDis, nombreDis;
+    @FXML private AnchorPane nuevoDistribuidor;
+    @FXML private Label id, nombre;
+    @FXML private TextField codigoDis, nombreDis;
 
     public void initialize(){
         Ventanas.v.initialize(id,nombre);
+        Ventanas.v.numericOnly(codigoDis);
     }
 
     public void atrasAlmacen(){

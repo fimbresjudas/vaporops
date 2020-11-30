@@ -33,15 +33,16 @@
             <Image url="@../Assets/atras.png" />
          </image>
       </ImageView>
-      <TableView layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
+      <TableView fx:id="productosT" layoutX="12.0" layoutY="127.0" prefHeight="342.0" prefWidth="672.0">
          <columns>
-            <TableColumn prefWidth="140.0" text="CODIGO" />
-            <TableColumn prefWidth="231.0" text="NOMBRE" />
-            <TableColumn prefWidth="150.0" text="PRECIO VENTA" />
-            <TableColumn prefWidth="150.0" text="CANTIDAD ACTUAL" />
+            <TableColumn fx:id="codigoC" prefWidth="140.0" text="CODIGO" />
+            <TableColumn fx:id="nombreC" prefWidth="231.0" text="NOMBRE" />
+            <TableColumn fx:id="precio_vC" prefWidth="150.0" text="PRECIO VENTA" />
+            <TableColumn fx:id="cantidadActualC" prefWidth="150.0" text="CANTIDAD ACTUAL" />
          </columns>
       </TableView>
-      <Button layoutX="576.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="BUSCAR" />
-      <TextField layoutX="373.0" layoutY="86.0" prefHeight="31.0" prefWidth="192.0" />
+      <Button layoutX="476.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#buscarProducto" style="-fx-background-color: WHITE;" text="BUSCAR" />
+      <TextField fx:id="buscarTF" layoutX="275.0" layoutY="86.0" prefHeight="31.0" prefWidth="192.0" />
+      <Button layoutX="567.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#initialize" style="-fx-background-color: WHITE;" text="REVERTIR" />
    </children>
 </AnchorPane>
